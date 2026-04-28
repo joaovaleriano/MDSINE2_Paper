@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-source synthetic/small/settings.sh
+source synthetic_rel/small/settings.sh
 
 
 require_program python
@@ -8,7 +8,7 @@ require_program python
 read_depth=25000
 for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
 	seed=$trial
-	python synthetic/helpers/create_datasets.py \
+	python synthetic_rel/helpers/create_datasets.py \
 	-i ${GLV_PARAMS} \
 	-t ${TIME_POINTS} \
 	-n ${COHORT_SIZE} \

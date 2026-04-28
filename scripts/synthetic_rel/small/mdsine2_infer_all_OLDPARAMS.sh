@@ -4,21 +4,20 @@ source synthetic/small/settings.sh
 
 read_depth=25000
 for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
-	# for noise_level in "low" "medium" "high"; do
-	for noise_level in "low"; do
+	for noise_level in "low" "medium" "high"; do
 		negbin_seed=123
 		dataset=${DATASET_DIR}/data/trial_${trial}/reads_${read_depth}/noise_${noise_level}/subjset.pkl
 		replicates=${DATASET_DIR}/data/trial_${trial}/reads_${read_depth}/noise_${noise_level}/replicate.pkl
 		trial_output_dir=${OUTPUT_DIR}/reads_${read_depth}/trial_${trial}/${noise_level}_noise
 
 		negbin_out_dir=${trial_output_dir}/mdsine2_negbin
-		inference_out_dir=${trial_output_dir}/mdsine2
+		inference_out_dir=${trial_output_dir}/mdsine2_OLDPARAMS
 		mkdir -p $inference_out_dir
 
 		# ======= Fit NegBin qPCR model
-		echo "[*] Fitting Negative binomial model."
-		mdsine2 infer-negbin --input ${replicates} --seed ${negbin_seed} --burnin 10 --n-samples 20 --checkpoint 1 --basepath $negbin_out_dir
-		mdsine2 visualize-negbin --chain "${negbin_out_dir}/replicate-${noise_level}/mcmc.pkl" --output-basepath "${negbin_out_dir}/replicate-${noise_level}"
+#		echo "[*] Fitting Negative binomial model."
+#		mdsine2 infer-negbin --input ${replicates} --seed ${negbin_seed} --burnin 2000 --n-samples 6000 --checkpoint 200 --basepath $negbin_out_dir
+#		mdsine2 visualize-negbin --chain "${negbin_out_dir}/replicate-${noise_level}/mcmc.pkl" --output-basepath "${negbin_out_dir}/replicate-${noise_level}"
 
 		# ======= Run inference
 		echo "[*] Running non-clustered mdsine2 inference (reads=${read_depth}, trial=${trial}, noise level=${noise_level})"
@@ -26,15 +25,15 @@ for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
 				--input $dataset \
 				--negbin ${negbin_out_dir}/replicate-${noise_level}/mcmc.pkl \
 				--seed 0 \
-				--burnin 10 \
-				--n-samples 20 \
-				--checkpoint 1 \
+				--burnin 5000 \
+				--n-samples 15000 \
+				--checkpoint 1000 \
 				--multiprocessing 0 \
 				--basepath $inference_out_dir \
-				--interaction-ind-prior "weak-agnostic" \
+				--interaction-ind-prior "strong-sparse" \
 				--perturbation-ind-prior "weak-agnostic" \
-				# --nomodules \
-				# --time_mask ${DATASET_DIR}/time_mask.tsv
+				--time_mask ${DATASET_DIR}/time_mask.tsv \
+				--gaussian-var-scaling 1e4
 		echo "[*] Finished mdsine2 inference."
 	done
 done

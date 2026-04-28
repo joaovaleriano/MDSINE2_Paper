@@ -1,0 +1,32 @@
+Subject M0-T25 output
+---------------------
+
+
+Taxa 0: NA TAXA_1
+-------------------
+Data: 1.2854E+05  1.2308E+05  1.4759E+05  1.3348E+05  1.5049E+05  1.3601E+05  
+Learned Values:
+	median: 1.5911E+05
+	mean: 1.5600E+05
+	25th percentile: 1.5911E+05
+	75th percentile: 1.6326E+05
+
+
+Taxa 1: NA TAXA_2
+-------------------
+Data: 1.8099E+05  1.8944E+05  1.6669E+05  1.8154E+05  1.5132E+05  1.5343E+05  
+Learned Values:
+	median: 1.5189E+05
+	mean: 1.5442E+05
+	25th percentile: 1.5189E+05
+	75th percentile: 1.5273E+05
+
+
+Taxa 2: NA TAXA_3
+-------------------
+Data: 5.7889E+04  6.2079E+04  5.7632E+04  5.4566E+04  6.7728E+04  8.2993E+04  
+Learned Values:
+	median: 6.0083E+04
+	mean: 6.1568E+04
+	25th percentile: 5.9925E+04
+	75th percentile: 6.5673E+04

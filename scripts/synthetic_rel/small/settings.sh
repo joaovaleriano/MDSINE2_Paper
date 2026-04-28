@@ -1,11 +1,11 @@
 # MODIFY THESE BASED ON LOCAL ENVIRONMENT.
-export DATASET_NAME="synthetic"
+export DATASET_NAME="synthetic_rel"
 source ./settings.sh  # use parent settings (scripts/settings.sh)
 
-_THIS_PATH="${PROJECT_DIR}/scripts/synthetic/settings.sh"
+_THIS_PATH="${PROJECT_DIR}/scripts/synthetic_rel/settings.sh"
 echo "[*] Using additional settings from ${_THIS_PATH}"
 
-export MDSINE2_LOG_INI="${PROJECT_DIR}/scripts/synthetic/logging.ini"
+export MDSINE2_LOG_INI="${PROJECT_DIR}/scripts/synthetic_rel/logging.ini"
 
 export GLV_PARAMS=${DATASET_DIR}/glv_3sp.npz
 export TIME_POINTS=${DATASET_DIR}/time_points.txt
