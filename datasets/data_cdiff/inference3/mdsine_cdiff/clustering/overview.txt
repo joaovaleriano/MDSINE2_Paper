@@ -1,0 +1,41 @@
+
+
+###################################
+Clustering concentration parameter
+###################################
+`Clustering concentration parameter` not learned
+	Value: 1.0
+
+
+###################################
+Clustering parameter
+###################################
+`Clustering parameter` not learned. These were the fixed cluster assignments
+Cluster 1:
+	- NA TAXA_1
+Cluster 2:
+	- NA TAXA_2
+Cluster 3:
+	- NA TAXA_3
+Cluster 4:
+	- NA TAXA_4
+Cluster 5:
+	- NA TAXA_5
+Cluster 6:
+	- NA TAXA_6
+Cluster 7:
+	- NA TAXA_7
+Cluster 8:
+	- NA TAXA_8
+Cluster 9:
+	- NA TAXA_9
+Cluster 10:
+	- NA TAXA_10
+Cluster 11:
+	- NA TAXA_11
+Cluster 12:
+	- NA TAXA_12
+Cluster 13:
+	- NA TAXA_13
+Cluster 14:
+	- NA TAXA_14

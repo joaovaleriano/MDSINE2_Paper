@@ -1,0 +1,27 @@
+
+
+###################################
+Mean parameter for the normal prior of the interaction parameter
+###################################
+	median: 9.82725782250847e-11
+	mean: 1.065561689095918e-10
+	25th percentile: -5.7553052810809456e-11
+	75th percentile: 2.640812885835732e-10
+
+
+###################################
+Variance parameter for the normal prior of the interaction parameter
+###################################
+	median: 2.2600948246282318e-18
+	mean: 2.4576266247478263e-18
+	25th percentile: 1.8618349333821412e-18
+	75th percentile: 2.828283623851318e-18
+
+
+###################################
+Cluster interaction probability
+###################################
+	median: 0.6649616415379873
+	mean: 0.664618253721094
+	25th percentile: 0.6402693126382462
+	75th percentile: 0.6886867996090635

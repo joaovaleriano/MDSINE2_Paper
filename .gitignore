@@ -6,7 +6,8 @@ __pycache__
 *.cpython*
 .DS_store
 *.lsf
-*.pkl
+# *.pkl
+**/traces.hdf5
 .Rproj.user
 sequence_analysis/tmp/
 sequence_analysis/raw_reads/
