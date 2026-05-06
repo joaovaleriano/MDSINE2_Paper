@@ -6,7 +6,7 @@ __pycache__
 *.cpython*
 .DS_store
 *.lsf
-*.pkl
+# *.pkl
 **/traces.hdf5
 traces.hdf5
 .Rproj.user
