@@ -1,14 +1,14 @@
 Global parameters
 -----------------
 Random seed: 0
-Total number of Gibb steps: 20
-Number of Gibb steps for burn-in: 10
-Saved location: /home/valeriano/Documents/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic/output/reads_25000/trial_0/low_noise/mdsine2/simulated-low
+Total number of Gibb steps: 15000
+Number of Gibb steps for burn-in: 5000
+Saved location: /home/valeriano/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic/output/reads_25000/trial_0/low_noise/mdsine2/simulated-low
 
 Negative binomial dispersion parameters
 ---------------------------------------
-a0: 6.0770E-11
-a1: 6.0222E-02
+a0: 2.7887E-08
+a1: 4.8050E-02
 
 Parameters learned and their order
 ----------------------------------
@@ -140,7 +140,7 @@ Complete initialization kwargs:
     "value_option": "linear-regression",
     "truncation_settings": "positive",
     "delay": 0,
-    "rescale_value": 1.0000000000000013e-09
+    "rescale_value": 0.0004408822504642225
   },
   "Variance parameter for the normal prior of the interaction parameter": {
     "value_option": "auto",
@@ -174,13 +174,13 @@ Complete initialization kwargs:
   "Filtering": {
     "x_value_option": "loess",
     "tune": [
-      5,
+      2500,
       50
     ],
-    "a0": 6.0770068709748e-11,
-    "a1": 0.06022245630686875,
+    "a0": 2.788740095656729e-08,
+    "a1": 0.048050481929753974,
     "v1": 0.0001,
-    "v2": 1.0000000000000013e-13,
+    "v2": 4.4088225046422256e-08,
     "proposal_init_scale": 0.001,
     "intermediate_interpolation": "linear-interpolation",
     "intermediate_step": null,
@@ -217,4 +217,4 @@ Complete initialization kwargs:
   }
 }
 
-Time for inference: 0.00040474130047692196 hours
+Time for inference: 0.4443251982000139 hours
