@@ -7,7 +7,7 @@ echo "[*] Using additional settings from ${_THIS_PATH}"
 
 export MDSINE2_LOG_INI="${PROJECT_DIR}/scripts/synthetic_rel/logging.ini"
 
-export GLV_PARAMS=${DATASET_DIR}/glv_3sp.npz
+export GLV_PARAMS=${DATASET_DIR}/glv.npz
 export TIME_POINTS=${DATASET_DIR}/time_points.txt
 
 export NUM_SAMPLE_TRIALS=1

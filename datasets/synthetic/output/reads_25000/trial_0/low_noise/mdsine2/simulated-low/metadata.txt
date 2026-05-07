@@ -8,7 +8,7 @@ Saved location: /home/valeriano/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic/ou
 Negative binomial dispersion parameters
 ---------------------------------------
 a0: 2.7887E-08
-a1: 4.8050E-02
+a1: 4.8278E-02
 
 Parameters learned and their order
 ----------------------------------
@@ -178,7 +178,7 @@ Complete initialization kwargs:
       50
     ],
     "a0": 2.788740095656729e-08,
-    "a1": 0.048050481929753974,
+    "a1": 0.048278347395637314,
     "v1": 0.0001,
     "v2": 4.4088225046422256e-08,
     "proposal_init_scale": 0.001,
@@ -217,4 +217,4 @@ Complete initialization kwargs:
   }
 }
 
-Time for inference: 0.4443251982000139 hours
+Time for inference: 0.37676185766855874 hours

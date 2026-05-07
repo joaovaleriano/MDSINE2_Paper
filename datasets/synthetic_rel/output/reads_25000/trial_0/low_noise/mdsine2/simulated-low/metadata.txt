@@ -1,14 +1,14 @@
 Global parameters
 -----------------
 Random seed: 0
-Total number of Gibb steps: 2000
-Number of Gibb steps for burn-in: 1000
-Saved location: /home/valeriano/Documents/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic_rel/output/reads_25000/trial_0/low_noise/mdsine2/simulated-low
+Total number of Gibb steps: 15000
+Number of Gibb steps for burn-in: 5000
+Saved location: /home/valeriano/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic_rel/output/reads_25000/trial_0/low_noise/mdsine2/simulated-low
 
 Negative binomial dispersion parameters
 ---------------------------------------
-a0: 5.4397E-10
-a1: 6.7583E-03
+a0: 3.8856E-08
+a1: 7.1031E-02
 
 Parameters learned and their order
 ----------------------------------
@@ -174,11 +174,11 @@ Complete initialization kwargs:
   "Filtering": {
     "x_value_option": "loess",
     "tune": [
-      500,
+      2500,
       50
     ],
-    "a0": 5.439728949739339e-10,
-    "a1": 0.006758339386263482,
+    "a0": 3.885626284798363e-08,
+    "a1": 0.07103124415046534,
     "v1": 0.0001,
     "v2": 1.0000000000000013e-13,
     "proposal_init_scale": 0.001,
@@ -217,4 +217,4 @@ Complete initialization kwargs:
   }
 }
 
-Time for inference: 0.04236151734987895 hours
+Time for inference: 0.6288801950878568 hours

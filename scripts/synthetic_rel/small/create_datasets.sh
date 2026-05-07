@@ -19,7 +19,7 @@ for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
 	-dt ${SIMULATION_DT} \
 	--read_depth $read_depth \
 	--low_noise ${LOW_NOISE_SCALE} \
-	--medium_noise ${MEDIUM_NOISE_SCALE} \
-	--high_noise ${HIGH_NOISE_SCALE} \
+	# --medium_noise ${MEDIUM_NOISE_SCALE} \
+	# --high_noise ${HIGH_NOISE_SCALE} \
 	# --intervene_day 10.0
 done
