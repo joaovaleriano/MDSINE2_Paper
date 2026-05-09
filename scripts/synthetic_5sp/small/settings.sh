@@ -7,11 +7,11 @@ echo "[*] Using additional settings from ${_THIS_PATH}"
 
 export MDSINE2_LOG_INI="${PROJECT_DIR}/scripts/synthetic_5sp/logging.ini"
 
-export GLV_PARAMS=${DATASET_DIR}/glv.npz
+export GLV_PARAMS=${DATASET_DIR}/glv_5sp.npz
 export TIME_POINTS=${DATASET_DIR}/time_points.txt
 
 export NUM_SAMPLE_TRIALS=1
-export COHORT_SIZE=10
+export COHORT_SIZE=5
 export PROCESS_VAR=0.1
 export SIMULATION_DT=0.01
 export LOW_NOISE_SCALE=0.5

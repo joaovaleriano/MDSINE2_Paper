@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-source synthetic/small/settings.sh
+source synthetic_5sp/small/settings.sh
 
 read_depth=25000
 for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
