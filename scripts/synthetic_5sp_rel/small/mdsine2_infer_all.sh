@@ -3,7 +3,8 @@ set -e
 source synthetic_5sp_rel/small/settings.sh
 
 read_depth=100000
-for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
+# for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
+for (( trial = 1; trial < 8; trial++ )); do
 	# for noise_level in "low" "medium" "high"; do
 	for noise_level in "low"; do
 		negbin_seed=123
