@@ -1,0 +1,220 @@
+Global parameters
+-----------------
+Random seed: 0
+Total number of Gibb steps: 15000
+Number of Gibb steps for burn-in: 5000
+Saved location: /home/valeriano/Documents/PhD_AMU/Work/MDSINE2_Paper/datasets/synthetic_5sp_rel_new/output/reads_100000/cohort1/trial_6/low_noise/mdsine2/simulated-low
+
+Negative binomial dispersion parameters
+---------------------------------------
+a0: 2.7887E-08
+a1: 7.8511E-05
+
+Parameters learned and their order
+----------------------------------
+0: Cluster interaction indicator parameter
+1: Cluster interaction probability
+2: Perturbation indicator parameter
+3: Probability parameter for the beta prior of the perturbation indicator parameter
+4: Logistic growth parameters (growth, self-interactions, interactions/perturbations)
+5: Mean parameter for the normal prior of the interaction parameter
+6: Mean parameter for the normal prior of the perturbation parameter
+7: Mean parameter for the truncated normal prior of the growth parameter
+8: Mean parameter for the truncated normal prior of the self-interaction parameter
+9: Variance parameter for the normal prior of the interaction parameter
+10: Variance parameter for the normal prior of the perturbation parameter
+11: Process Variance parameter
+12: Filtering
+
+
+Selected Initialization choices
+-------------------------------
+Cluster interaction probability prior: weak-agnostic
+Perturbation probability prior: weak-agnostic
+Filtering initialization: loess
+Cluster initialization: No clusters, everything in its own cluster
+
+Complete initialization kwargs: 
+{
+  "qPCR variances": {
+    "value_option": "empirical"
+  },
+  "qPCR hyperprior scales": {
+    "value_option": "prior-mean",
+    "scale_option": "empirical",
+    "dof_option": "diffuse",
+    "proposal_option": "auto",
+    "target_acceptance_rate": "optimal",
+    "end_tune": "half-burnin",
+    "tune": 50,
+    "delay": 0
+  },
+  "qPCR hyperprior degrees of freedom": {
+    "value_option": "diffuse",
+    "low_option": "valid",
+    "high_option": "med",
+    "proposal_option": "auto",
+    "target_acceptance_rate": "optimal",
+    "end_tune": "half-burnin",
+    "tune": 50,
+    "delay": 0
+  },
+  "Perturbation value parameter": {
+    "value_option": "prior-mean",
+    "delay": 0
+  },
+  "Probability parameter for the beta prior of the perturbation indicator parameter": {
+    "value_option": "prior-mean",
+    "hyperparam_option": "weak-agnostic",
+    "delay": 0,
+    "N": "fixed-clustering"
+  },
+  "Perturbation indicator parameter": {
+    "value_option": "all-off",
+    "delay": 0
+  },
+  "Variance parameter for the normal prior of the perturbation parameter": {
+    "value_option": "prior-mean",
+    "scale_option": "auto",
+    "target_mean": 10000.0,
+    "dof_option": "diffuse",
+    "delay": 0
+  },
+  "Mean parameter for the normal prior of the perturbation parameter": {
+    "value_option": "prior-mean",
+    "loc_option": "zero",
+    "scale2_option": "diffuse",
+    "delay": 0
+  },
+  "Variance parameter for the truncated normal prior of the growth parameter": {
+    "value_option": "prior-mean",
+    "scale_option": "inflated-median",
+    "inflation_factor": 10000.0,
+    "dof_option": "diffuse",
+    "proposal_option": "tight",
+    "target_acceptance_rate": "optimal",
+    "end_tune": "half-burnin",
+    "tune": 50,
+    "delay": 0
+  },
+  "Mean parameter for the truncated normal prior of the growth parameter": {
+    "value_option": "prior-mean",
+    "loc_option": "manual",
+    "scale2_option": "diffuse-linear-regression",
+    "proposal_option": "auto",
+    "target_acceptance_rate": 0.44,
+    "tune": 50,
+    "end_tune": "half-burnin",
+    "truncation_settings": "positive",
+    "delay": 0,
+    "loc": 1
+  },
+  "Growth parameter": {
+    "value_option": "linear-regression",
+    "truncation_settings": "positive",
+    "delay": 0
+  },
+  "Variance parameter for the truncated normal prior of the self-interaction parameter": {
+    "value_option": "prior-mean",
+    "scale_option": "inflated-median",
+    "inflation_factor": 10000.0,
+    "dof_option": "diffuse",
+    "proposal_option": "tight",
+    "target_acceptance_rate": "optimal",
+    "end_tune": "half-burnin",
+    "tune": 50,
+    "delay": 0
+  },
+  "Mean parameter for the truncated normal prior of the self-interaction parameter": {
+    "value_option": "prior-mean",
+    "loc_option": "median-linear-regression",
+    "scale2_option": "diffuse-linear-regression",
+    "proposal_option": "auto",
+    "target_acceptance_rate": 0.44,
+    "tune": 50,
+    "end_tune": "half-burnin",
+    "truncation_settings": "positive",
+    "delay": 0
+  },
+  "Self interaction parameter": {
+    "value_option": "linear-regression",
+    "truncation_settings": "positive",
+    "delay": 0,
+    "rescale_value": 1.0000000000000013e-09
+  },
+  "Variance parameter for the normal prior of the interaction parameter": {
+    "value_option": "auto",
+    "dof_option": "manual",
+    "scale_option": "inflated-median",
+    "inflation_factor": 10000.0,
+    "mean_scaling_factor": 1,
+    "delay": 0,
+    "dof": 2.01
+  },
+  "Mean parameter for the normal prior of the interaction parameter": {
+    "value_option": "prior-mean",
+    "loc_option": "zero",
+    "scale2_option": "auto",
+    "delay": 0
+  },
+  "Cluster interaction value parameter": {
+    "value_option": "all-off",
+    "delay": 0
+  },
+  "Cluster interaction indicator parameter": {
+    "delay": 0,
+    "run_every_n_iterations": 1
+  },
+  "Cluster interaction probability": {
+    "value_option": "auto",
+    "hyperparam_option": "weak-agnostic",
+    "delay": 0,
+    "N": "fixed-clustering"
+  },
+  "Filtering": {
+    "x_value_option": "loess",
+    "tune": [
+      2500,
+      50
+    ],
+    "a0": 2.788740095656729e-08,
+    "a1": 7.85105850572328e-05,
+    "v1": 0.0001,
+    "v2": 1.0000000000000013e-13,
+    "proposal_init_scale": 0.001,
+    "intermediate_interpolation": "linear-interpolation",
+    "intermediate_step": null,
+    "essential_timepoints": "union",
+    "delay": 1,
+    "window": 6,
+    "target_acceptance_rate": 0.44
+  },
+  "Zero inflation": {
+    "value_option": null,
+    "delay": 0
+  },
+  "Clustering concentration parameter": {
+    "value_option": "prior-mean",
+    "hyperparam_option": "diffuse",
+    "delay": 0,
+    "n_iter": 20
+  },
+  "Clustering parameter": {
+    "value_option": "no-clusters",
+    "delay": 2,
+    "n_clusters": 30,
+    "run_every_n_iterations": 4
+  },
+  "Logistic growth parameters (growth, self-interactions, interactions/perturbations)": {
+    "update_jointly_pert_inter": true,
+    "update_jointly_growth_selfinter": false
+  },
+  "Process Variance parameter": {
+    "dof_option": "diffuse",
+    "scale_option": "med",
+    "value_option": "prior-mean",
+    "delay": 0
+  }
+}
+
+Time for inference: 0.8370105373197132 hours

@@ -1,0 +1,52 @@
+Subject M0-T9 output
+---------------------
+
+
+Taxa 0: NA TAXA_1
+-------------------
+Data: 2.2656E+03  2.2459E+03  2.2178E+03  2.2644E+03  2.2348E+03  2.2171E+03  
+Learned Values:
+	median: 2.3048E+03
+	mean: 2.3046E+03
+	25th percentile: 2.2613E+03
+	75th percentile: 2.3387E+03
+
+
+Taxa 1: NA TAXA_2
+-------------------
+Data: 3.8303E+03  3.7393E+03  3.6951E+03  3.7778E+03  3.8413E+03  3.7482E+03  
+Learned Values:
+	median: 3.8684E+03
+	mean: 3.8775E+03
+	25th percentile: 3.7902E+03
+	75th percentile: 3.9460E+03
+
+
+Taxa 2: NA TAXA_3
+-------------------
+Data: 1.4435E+03  1.4124E+03  1.4105E+03  1.4430E+03  1.4688E+03  1.4557E+03  
+Learned Values:
+	median: 1.4738E+03
+	mean: 1.4801E+03
+	25th percentile: 1.4477E+03
+	75th percentile: 1.5091E+03
+
+
+Taxa 3: NA TAXA_4
+-------------------
+Data: 1.5112E+03  1.5639E+03  1.5856E+03  1.5537E+03  1.5762E+03  1.5279E+03  
+Learned Values:
+	median: 1.6053E+03
+	mean: 1.6026E+03
+	25th percentile: 1.5653E+03
+	75th percentile: 1.6334E+03
+
+
+Taxa 4: NA TAXA_5
+-------------------
+Data: 4.2642E+03  4.3052E+03  4.2267E+03  4.2459E+03  4.2255E+03  4.2885E+03  
+Learned Values:
+	median: 4.3741E+03
+	mean: 4.3806E+03
+	25th percentile: 4.2744E+03
+	75th percentile: 4.4451E+03

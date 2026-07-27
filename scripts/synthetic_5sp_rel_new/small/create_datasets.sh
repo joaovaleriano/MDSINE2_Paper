@@ -1,0 +1,49 @@
+#!/bin/bash
+set -e
+source synthetic_5sp_rel_new/small/settings.sh
+
+
+require_program python
+
+# read_depth=100000
+# for (( trial = 0; trial < ${NUM_SAMPLE_TRIALS}; trial++ )); do
+# 	seed=$trial
+# 	python synthetic_5sp_rel/helpers/create_datasets.py \
+# 	-i ${GLV_PARAMS} \
+# 	-t ${TIME_POINTS} \
+# 	-n ${COHORT_SIZE} \
+# 	-o ${DATASET_DIR}/data/trial_${trial} \
+# 	-s ${seed} \
+# 	--num_qpcr_triplicates ${QPCR_TRIPLICATES} \
+# 	--process_var ${PROCESS_VAR} \
+# 	-dt ${SIMULATION_DT} \
+# 	--read_depth $read_depth \
+# 	--low_noise ${LOW_NOISE_SCALE} \
+# 	--medium_noise ${MEDIUM_NOISE_SCALE} \
+# 	--high_noise ${HIGH_NOISE_SCALE} \
+# 	# --intervene_day 10.0
+# done
+
+seed=0
+
+read_depth=100000
+
+for ((cohort = 1; cohort < 11; cohort += 3)); do
+	for (( trial = 0; trial <= 6; trial += 2 )); do
+		# seed=$trial
+		python synthetic_5sp_rel_new/helpers/create_datasets.py \
+		-i ${GLV_PARAMS} \
+		-t ${DATASET_DIR}/time_points${trial}.txt \
+		-n ${cohort} \
+		-o ${DATASET_DIR}/data/cohort${cohort}/trial_${trial} \
+		-s ${seed} \
+		--num_qpcr_triplicates ${QPCR_TRIPLICATES} \
+		--process_var ${PROCESS_VAR} \
+		-dt ${SIMULATION_DT} \
+		--read_depth $read_depth \
+		--low_noise ${LOW_NOISE_SCALE} \
+		--medium_noise ${MEDIUM_NOISE_SCALE} \
+		--high_noise ${HIGH_NOISE_SCALE} \
+		# --intervene_day 10.0
+	done
+done
